@@ -4,7 +4,7 @@ inputs:
       description: "project github repository url"
       required: true
       default: ''
-   github-repo-url:
+   github-user-id:
       required: true
       default: ''
    gh-token:
