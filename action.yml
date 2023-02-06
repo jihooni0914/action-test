@@ -4,6 +4,12 @@ inputs:
       description: "project github repository url"
       required: true
       default: ''
+   github-repo-url:
+      required: true
+      default: ''
+   gh-token:
+      required: true
+      default: ''
 runs:
    using: "docker"
    image: "Dockerfile"
