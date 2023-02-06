@@ -9,3 +9,5 @@ runs:
    image: "Dockerfile"
    args:
       - ${{ inputs.github-repo-url }}
+      - ${{ inputs.github-user-id }}
+      - ${{ inputs.gh-token }}
