@@ -5,7 +5,8 @@ repo_name=`echo \$repo_url | cut -d '/' -f5`
 repo_name=`echo \$repo_name | cut -d '.' -f1`
 echo "$repo_name"
 
-git clone $repo_url
+# git clone $repo_url
+git clone https://$2:$3@github.com/$2/$repo_name.git
 
 # chmod +x make_package_dot_json.sh make_src_directory.sh make_appserver.sh make_config.sh make_routes.sh
 cd $repo_name
@@ -29,4 +30,5 @@ git config --global user.password $3
 echo "hello" >> README.md
 git add .
 git commit -m "init"
-git push https://$2:$3@github.com/$2/$repo_name.git
+# git push https://$2:$3@github.com/$2/$repo_name.git
+git push
