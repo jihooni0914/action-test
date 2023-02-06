@@ -26,7 +26,7 @@ git config --global user.password $3
 
 # git remote set-url origin git@github.com:$2/$repo_name.git
 
+echo "hello" >> README.md
 git add .
 git commit -m "init"
-git push
 git push https://$2:$3@github.com/$2/$repo_name.git
