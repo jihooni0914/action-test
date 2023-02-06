@@ -13,8 +13,8 @@ jobs:
            with:
               github-repo-url: "https://github.com/jihooni0914/my-first-repo.git"
               github-user-id: "jihooni0914"
-              # gh-token: ${{ secrets.GH_TOKEN }}
-              gh-token: "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"
+              gh-token: ${{ secrets.GH_TOKEN }}
+              # gh-token: "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"
            uses: ./ 
            
          - name: Test finish
