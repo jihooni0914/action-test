@@ -18,8 +18,8 @@ cd $repo_name
 ls
 
 
-# git config --global user.name $2
-# git config --global user.name 
+git config --global user.name $2
+git config --global user.name 
 # git config --global user.email $2@gmail.com
 # git config --global user.email
 # git config --global user.password $3
